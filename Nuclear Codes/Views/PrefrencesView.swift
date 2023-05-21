@@ -10,6 +10,7 @@ import SwiftUI
 struct PrefrencesView: View {
     
     @EnvironmentObject var appLockVM: AppLockViewModel
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         NavigationView {
@@ -22,6 +23,11 @@ struct PrefrencesView: View {
                 })
             }
             .navigationTitle("Prefrences")
+            .toolbar {
+                Button("Done") {
+                    dismiss()
+                }
+            }
         }
     }
 }
