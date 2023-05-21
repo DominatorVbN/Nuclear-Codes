@@ -15,7 +15,7 @@ struct SecretListView: View {
     @State var isShowingProfiles = false
     
     var filteredListView: some View {
-        List(viewModel.filtered) { secretItem in
+        List(viewModel.items) { secretItem in
             NavigationLink {
                 SecretDetailView(secretItem: secretItem)
             } label: {
@@ -25,13 +25,29 @@ struct SecretListView: View {
         .listStyle(InsetGroupedListStyle())
         .frame(maxWidth: .infinity, alignment: .trailing)
         .overlay {
-            if viewModel.filtered.isEmpty {
-                VStack(spacing: 16) {
-                    Text("No Results")
-                        .font(.title)
-                    Text("for \"\(viewModel.query)\"")
-                }.foregroundStyle(.secondary)
+            if isSearching {
+                Group {
+                    if viewModel.filtered.isEmpty {
+                        VStack(spacing: 16) {
+                            Text("No Results")
+                                .font(.title)
+                            Text("for \"\(viewModel.query)\"")
+                        }
+                        .foregroundStyle(.secondary)
+                    } else {
+                        List(viewModel.filtered) { secretItem in
+                            NavigationLink {
+                                SecretDetailView(secretItem: secretItem)
+                            } label: {
+                                SecretRow(secretItem: secretItem)
+                            }
+                        }
+                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(.thickMaterial)
             }
+            
         }
     }
     

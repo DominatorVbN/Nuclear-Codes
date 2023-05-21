@@ -10,6 +10,7 @@ import SwiftUI
 struct MainContentView: View {
     
     @EnvironmentObject var profileStore: ProfileStore
+    @EnvironmentObject var appLockVM: AppLockViewModel
     @StateObject var viewModel = ContentViewModel()
     @State var pushProfileList = false
     @State var isShowingAddProfile = false
@@ -93,6 +94,7 @@ struct MainContentView: View {
         }
         .sheet(isPresented: $isShowingPrefrences) {
             PrefrencesView()
+                .environmentObject(appLockVM)
         }
         .onChange(of: profileStore.selectedProfile) { newProfile in
             loadData(profile: newProfile)

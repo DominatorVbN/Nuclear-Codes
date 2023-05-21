@@ -42,6 +42,7 @@ struct ContentView: View {
                                 print("unknown")
                         }
                     })
+                    .environmentObject(appLockVM)
             } else {
                 AppLockView()
             }
