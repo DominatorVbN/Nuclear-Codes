@@ -36,11 +36,22 @@
 		28B747FE26D164CB006A5B2D /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B747F426D164CA006A5B2D /* ProfileStore.swift */; };
 		28B747FF26D164CB006A5B2D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B747F526D164CA006A5B2D /* Profile.swift */; };
 		28B7480026D164CB006A5B2D /* SecretItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B747F626D164CA006A5B2D /* SecretItem.swift */; };
+		28FB13BD2A1D43F700A36428 /* NuclearCodesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB13BC2A1D43F700A36428 /* NuclearCodesTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28FB13BE2A1D43F700A36428 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28B747D026D1647F006A5B2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28B747D726D1647F006A5B2D;
+			remoteInfo = NuclearCodes;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2823C01A2A1A544E002B2D91 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2823C01B2A1A6630002B2D91 /* Nuclear Codes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Nuclear Codes.entitlements"; sourceTree = "<group>"; };
+		2823C01B2A1A6630002B2D91 /* NuclearCodes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NuclearCodes.entitlements; sourceTree = "<group>"; };
 		2879F87126D20ED80084BC9F /* RetryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryView.swift; sourceTree = "<group>"; };
 		2879F87626D244E10084BC9F /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		2879F87826D250510084BC9F /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
@@ -56,7 +67,7 @@
 		2879F88E26D2E2FE0084BC9F /* AppLockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLockView.swift; sourceTree = "<group>"; };
 		2879F89026D2E3280084BC9F /* PrefrencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefrencesView.swift; sourceTree = "<group>"; };
 		2879F89326D2E4530084BC9F /* AddProfileDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileDialogView.swift; sourceTree = "<group>"; };
-		28B747D826D1647F006A5B2D /* Nuclear Codes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nuclear Codes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B747D826D1647F006A5B2D /* NuclearCodes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NuclearCodes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B747DB26D1647F006A5B2D /* NuclearCodesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuclearCodesApp.swift; sourceTree = "<group>"; };
 		28B747DF26D16481006A5B2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28B747E226D16481006A5B2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -70,6 +81,8 @@
 		28B747F426D164CA006A5B2D /* ProfileStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
 		28B747F526D164CA006A5B2D /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		28B747F626D164CA006A5B2D /* SecretItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretItem.swift; sourceTree = "<group>"; };
+		28FB13BA2A1D43F700A36428 /* NuclearCodesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuclearCodesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28FB13BC2A1D43F700A36428 /* NuclearCodesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuclearCodesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +92,13 @@
 			files = (
 				2879F87526D2292C0084BC9F /* ElegantAPI in Frameworks */,
 				2879F88826D2E1330084BC9F /* KeychainStored in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28FB13B72A1D43F700A36428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				2823C01A2A1A544E002B2D91 /* README.md */,
-				28B747DA26D1647F006A5B2D /* Nuclear Codes */,
+				28B747DA26D1647F006A5B2D /* NuclearCodes */,
+				28FB13BB2A1D43F700A36428 /* NuclearCodesTests */,
 				28B747D926D1647F006A5B2D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,15 +126,16 @@
 		28B747D926D1647F006A5B2D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28B747D826D1647F006A5B2D /* Nuclear Codes.app */,
+				28B747D826D1647F006A5B2D /* NuclearCodes.app */,
+				28FB13BA2A1D43F700A36428 /* NuclearCodesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28B747DA26D1647F006A5B2D /* Nuclear Codes */ = {
+		28B747DA26D1647F006A5B2D /* NuclearCodes */ = {
 			isa = PBXGroup;
 			children = (
-				2823C01B2A1A6630002B2D91 /* Nuclear Codes.entitlements */,
+				2823C01B2A1A6630002B2D91 /* NuclearCodes.entitlements */,
 				2879F88926D2E2490084BC9F /* Nuclear-Codes-Info.plist */,
 				2879F89226D2E3EF0084BC9F /* App */,
 				28B747EF26D164CA006A5B2D /* API */,
@@ -123,7 +145,7 @@
 				28B747DF26D16481006A5B2D /* Assets.xcassets */,
 				28B747E126D16481006A5B2D /* Preview Content */,
 			);
-			path = "Nuclear Codes";
+			path = NuclearCodes;
 			sourceTree = "<group>";
 		};
 		28B747E126D16481006A5B2D /* Preview Content */ = {
@@ -186,12 +208,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		28FB13BB2A1D43F700A36428 /* NuclearCodesTests */ = {
+			isa = PBXGroup;
+			children = (
+				28FB13BC2A1D43F700A36428 /* NuclearCodesTests.swift */,
+			);
+			path = NuclearCodesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28B747D726D1647F006A5B2D /* Nuclear Codes */ = {
+		28B747D726D1647F006A5B2D /* NuclearCodes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28B747E626D16481006A5B2D /* Build configuration list for PBXNativeTarget "Nuclear Codes" */;
+			buildConfigurationList = 28B747E626D16481006A5B2D /* Build configuration list for PBXNativeTarget "NuclearCodes" */;
 			buildPhases = (
 				28B747D426D1647F006A5B2D /* Sources */,
 				28B747D526D1647F006A5B2D /* Frameworks */,
@@ -201,14 +231,32 @@
 			);
 			dependencies = (
 			);
-			name = "Nuclear Codes";
+			name = NuclearCodes;
 			packageProductDependencies = (
 				2879F87426D2292C0084BC9F /* ElegantAPI */,
 				2879F88726D2E1330084BC9F /* KeychainStored */,
 			);
 			productName = "Nuclear Codes";
-			productReference = 28B747D826D1647F006A5B2D /* Nuclear Codes.app */;
+			productReference = 28B747D826D1647F006A5B2D /* NuclearCodes.app */;
 			productType = "com.apple.product-type.application";
+		};
+		28FB13B92A1D43F700A36428 /* NuclearCodesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28FB13C02A1D43F700A36428 /* Build configuration list for PBXNativeTarget "NuclearCodesTests" */;
+			buildPhases = (
+				28FB13B62A1D43F700A36428 /* Sources */,
+				28FB13B72A1D43F700A36428 /* Frameworks */,
+				28FB13B82A1D43F700A36428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28FB13BF2A1D43F700A36428 /* PBXTargetDependency */,
+			);
+			name = NuclearCodesTests;
+			productName = NuclearCodesTests;
+			productReference = 28FB13BA2A1D43F700A36428 /* NuclearCodesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -217,11 +265,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					28B747D726D1647F006A5B2D = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					28FB13B92A1D43F700A36428 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 28B747D726D1647F006A5B2D;
 					};
 				};
 			};
@@ -242,7 +294,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28B747D726D1647F006A5B2D /* Nuclear Codes */,
+				28B747D726D1647F006A5B2D /* NuclearCodes */,
+				28FB13B92A1D43F700A36428 /* NuclearCodesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +307,13 @@
 			files = (
 				28B747E326D16481006A5B2D /* Preview Assets.xcassets in Resources */,
 				28B747E026D16481006A5B2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28FB13B82A1D43F700A36428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +352,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		28FB13B62A1D43F700A36428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28FB13BD2A1D43F700A36428 /* NuclearCodesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28FB13BF2A1D43F700A36428 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 28B747D726D1647F006A5B2D /* NuclearCodes */;
+			targetProxy = 28FB13BE2A1D43F700A36428 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		28B747E426D16481006A5B2D /* Debug */ = {
@@ -417,10 +494,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = "Nuclear Codes/Nuclear Codes.entitlements";
+				CODE_SIGN_ENTITLEMENTS = NuclearCodes/NuclearCodes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_ASSET_PATHS = "\"Nuclear Codes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NuclearCodes/Preview Content\"";
 				DEVELOPMENT_TEAM = NWJALMT777;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -455,10 +532,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = "Nuclear Codes/Nuclear Codes.entitlements";
+				CODE_SIGN_ENTITLEMENTS = NuclearCodes/NuclearCodes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_ASSET_PATHS = "\"Nuclear Codes/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NuclearCodes/Preview Content\"";
 				DEVELOPMENT_TEAM = NWJALMT777;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -487,6 +564,54 @@
 			};
 			name = Release;
 		};
+		28FB13C12A1D43F700A36428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWJALMT777;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.amitsamant.NuclearCodesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuclearCodes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NuclearCodes";
+			};
+			name = Debug;
+		};
+		28FB13C22A1D43F700A36428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NWJALMT777;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.amitsamant.NuclearCodesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NuclearCodes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NuclearCodes";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -499,11 +624,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28B747E626D16481006A5B2D /* Build configuration list for PBXNativeTarget "Nuclear Codes" */ = {
+		28B747E626D16481006A5B2D /* Build configuration list for PBXNativeTarget "NuclearCodes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28B747E726D16481006A5B2D /* Debug */,
 				28B747E826D16481006A5B2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28FB13C02A1D43F700A36428 /* Build configuration list for PBXNativeTarget "NuclearCodesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28FB13C12A1D43F700A36428 /* Debug */,
+				28FB13C22A1D43F700A36428 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

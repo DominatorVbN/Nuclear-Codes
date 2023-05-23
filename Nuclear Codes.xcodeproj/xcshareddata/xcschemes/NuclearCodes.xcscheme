@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28B747D726D1647F006A5B2D"
-               BuildableName = "Nuclear Codes.app"
-               BlueprintName = "Nuclear Codes"
+               BuildableName = "NuclearCodes.app"
+               BlueprintName = "NuclearCodes"
                ReferencedContainer = "container:Nuclear Codes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,6 +28,17 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "28FB13B92A1D43F700A36428"
+               BuildableName = "NuclearCodesTests.xctest"
+               BlueprintName = "NuclearCodesTests"
+               ReferencedContainer = "container:Nuclear Codes.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -45,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28B747D726D1647F006A5B2D"
-            BuildableName = "Nuclear Codes.app"
-            BlueprintName = "Nuclear Codes"
+            BuildableName = "NuclearCodes.app"
+            BlueprintName = "NuclearCodes"
             ReferencedContainer = "container:Nuclear Codes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +73,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28B747D726D1647F006A5B2D"
-            BuildableName = "Nuclear Codes.app"
-            BlueprintName = "Nuclear Codes"
+            BuildableName = "NuclearCodes.app"
+            BlueprintName = "NuclearCodes"
             ReferencedContainer = "container:Nuclear Codes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

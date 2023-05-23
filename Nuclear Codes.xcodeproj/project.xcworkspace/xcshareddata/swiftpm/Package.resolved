@@ -1,25 +1,23 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "ElegantAPI",
-        "repositoryURL": "https://github.com/DominatorVbN/ElegantAPI",
-        "state": {
-          "branch": "master",
-          "revision": "3817c0739fef76195b708dd5cddb06c2d855b7f2",
-          "version": null
-        }
-      },
-      {
-        "package": "KeychainStored",
-        "repositoryURL": "git@github.com:owowagency/KeychainStored.git",
-        "state": {
-          "branch": null,
-          "revision": "a5a1fccec6fe279fc244e37a7190c92ec15bf456",
-          "version": "1.1.0"
-        }
+  "pins" : [
+    {
+      "identity" : "elegantapi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DominatorVbN/ElegantAPI",
+      "state" : {
+        "branch" : "master",
+        "revision" : "3817c0739fef76195b708dd5cddb06c2d855b7f2"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "keychainstored",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:owowagency/KeychainStored.git",
+      "state" : {
+        "revision" : "a5a1fccec6fe279fc244e37a7190c92ec15bf456",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 2
 }
